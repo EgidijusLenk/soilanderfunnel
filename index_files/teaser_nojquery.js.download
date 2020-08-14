@@ -1,0 +1,101 @@
+var answerMapping = {
+  teaser_answer_2: {
+    'Huiseigenaar': {
+      sd_homeownership: 'home_owner'
+    },
+    'Huurder': {
+      sd_homeownership: 'renting'
+    },
+    'Anders': {
+      sd_homeownership: 'none'
+    }
+  }
+};
+
+var surveys = document.querySelectorAll('#question-box .survey');
+if (surveys.length) {
+  surveys[0].style.display = 'block';
+}
+showGraphics();
+var teaserCount = 1;
+var teaserSpinner = document.querySelector('#teaser-spinner');
+var footer = document.querySelector('#footer');
+var questionBox = document.querySelector('#question-box');
+var leadgenBox = document.querySelector('#leadgen-box');
+var answers = document.querySelectorAll('#question-box .answer');
+answers.forEach(function(element) {
+  element.addEventListener('click', function(event) {
+    event.preventDefault();
+    var text = element.innerHTML;
+    var question = 'teaser_answer_' + teaserCount;
+    var answer = text.toLowerCase().replace(/\s+/g,' ').trim();
+
+    if (typeof window.qubiq_profile_add == 'function' || !element.parentElement.classList.contains('qubiq-add')) {
+      element.parentElement.style.display = 'none';
+      if (typeof window.qubiq_profile_add == 'function') {
+        if (typeof(answerMapping[question]) !== 'undefined') {
+          if (typeof(answerMapping[question][answer]) !== 'undefined') {
+            window.qubiq_profile_add(answerMapping[question][answer]);
+          }
+        }
+      }
+      if (surveys.length > teaserCount ) {
+        surveys[teaserCount] ? surveys[teaserCount].style.display = 'block' : null;
+        surveys[teaserCount-1] ? surveys[teaserCount-1].style.display = 'none' : null;
+      } else {
+        startCheck();
+        setTimeout(function () {
+          questionBox ? questionBox.style.display = 'none' : null;
+          footer ? footer.style.display = 'block' : null;
+          leadgenBox ? leadgenBox.style.display = 'block' : null;
+        }, 100);
+      }
+      teaserCount++;
+    } else {
+      document.addEventListener('loaded_widget', function() {
+        document.querySelector('#teaser-spinner').style.display = 'none';
+        if (typeof(answerMapping[question]) !== 'undefined') {
+          if (typeof(answerMapping[question][answer]) !== 'undefined') {
+            window.qubiq_profile_add(answerMapping[question][answer]);
+          }
+        }
+        if (surveys.length > teaserCount ) {
+          surveys[teaserCount] ? surveys[teaserCount].style.display = 'block' : null;
+          surveys[teaserCount-1] ? surveys[teaserCount-1].style.display = 'none' : null;
+        } else {
+          startCheck();
+          setTimeout(function () {
+            questionBox ? questionBox.style.display = 'none' : null;
+            footer ? footer.style.display = 'block' : null;
+            leadgenBox ? leadgenBox.style.display = 'block' : null;
+          }, 100);
+        }
+        teaserCount++;
+        document.removeEventListener('loaded_widget', function(){}, false);
+      }, false);
+      teaserSpinner ? teaserSpinner.style.display = 'block' : null;
+    }
+  })
+});
+
+function startCheck() {
+  var overlay = document.querySelector('.overlay-checker.main'),
+    points = document.querySelectorAll('.overlay-checker-points > li');
+  // Initially, hide all the points so we can show them one by one
+  points.forEach(function (value) {
+    value.style.display = 'none';
+  });
+  // Fade in the overlay
+  overlay ? fadeIn(overlay, 250) : null;
+  // Loop points.lenght times (so through every point)
+  points.forEach(function(element, index) {
+    setTimeout(function () {
+      fadeIn(element,250);
+    }, 750 * (index + 1));
+  });
+
+  // After all items have been faded in:
+  setTimeout(function () {
+    overlay ? fadeOut(overlay) : null;
+  }, 750 * points.length + 1000);
+}

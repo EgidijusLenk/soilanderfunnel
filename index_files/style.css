@@ -1,0 +1,438 @@
+#game .tile.active span,
+.hidden {
+	opacity: 0
+}
+
+#game .tile,
+.left {
+	cursor: pointer;
+	float: left
+}
+
+#wrapper,
+.item,
+.left,
+.right {
+	position: relative
+}
+
+figure,
+ol,
+p,
+ul {
+	margin: 0 0 24px
+}
+
+#game .tile,
+a,
+a img,
+button {
+	transition: all .3s ease 0s
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.fbcoms,
+.item {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+:focus {
+	outline: 0
+}
+
+::-moz-focus-inner {
+	border: 0
+}
+
+a {
+	color: #39b54a;
+	text-decoration: none;
+	background-color: transparent
+}
+
+.buttons span:hover,
+.countdown span,
+.fblike:hover,
+.left:hover {
+	text-decoration: underline
+}
+
+a:active,
+a:focus,
+a:hover {
+	outline: 0;
+	-moz-outline-style: none
+}
+
+ol:last-child,
+p:last-child,
+ul:last-child {
+	margin-bottom: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 120%;
+	font-weight: 400;
+	margin: 0
+}
+
+h1 {
+	font-size: 35px;
+	line-height: 140%;
+	color: #048acd
+}
+
+h2 {
+	font-size: 24px
+}
+
+h3 {
+	font-size: 20px
+}
+
+h4 {
+	font-size: 18px
+}
+
+h5 {
+	font-size: 14px
+}
+
+h6 {
+	font-size: 12px
+}
+
+.wrapper,
+figure img {
+	margin: 0 auto
+}
+
+img {
+	display: block;
+	border: 0;
+	-webkit-backface-visibility: hidden
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+#wrapper {
+	min-height: 100%
+}
+
+.wrapper {
+	width: 100%;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.clearfix:after,
+.clearfix:before {
+	display: table;
+	content: ''
+}
+
+.clearfix:after {
+	clear: both
+}
+
+.header-top {
+	background-color: #333;
+	padding: 10px 0
+}
+
+.header-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 100;
+	padding-top: .5rem;
+	color: #fff;
+	text-shadow: #000 1px 1px;
+	display: inline-block;
+	margin: 0
+}
+
+#panel1 h2,
+.clickhere,
+.comments,
+.header-boss,
+.name {
+	font-weight: 700
+}
+
+.header-sub {
+	font-size: 13px;
+	color: #9fa2a6
+}
+
+.hamburger {
+	width: 14px;
+	padding: 6px 0 4px
+}
+
+.hamburger .line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #aeaeae;
+	margin-bottom: 2px
+}
+
+.header-bottom {
+	background: #fff;
+	margin-bottom: 12px;
+	padding: 10px 0
+}
+
+.header-boss {
+	font-size: 16px
+}
+
+.hidden {
+	display: none
+}
+
+.btn,
+.countdown span {
+	display: inline-block
+}
+
+#panel2,
+.comments,
+.hidden .combot,
+.hidden .comtxt {
+	display: none
+}
+
+.panel {
+	margin-bottom: 24px
+}
+
+#game {
+	width: 70%;
+	margin: 0 auto
+}
+
+#game .tile {
+	width: 33.33%;
+	height: 33.33%;
+	background: #048acd;
+	border-right: 1px solid #fff;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	padding-top: 12.5%
+}
+
+#game .tile.active {
+	background: url(assets/iphone-se.png) center center no-repeat #ded4c8;
+	background-size: 60% auto
+}
+
+#game .tile.joker {
+	background: url(assets/giftbox.png) center center no-repeat #ded4c8;
+	background-size: 60% auto
+}
+
+.btn {
+	width: 70%;
+	height: 44px;
+	line-height: 42px;
+	font-size: 20px;
+	color: #fff;
+	border: 1px solid #fc7e14;
+	border-radius: 4px;
+	background: #ffa400;
+	background: -moz-linear-gradient(top, rgba(255, 164, 0, 1) 0, rgba(251, 110, 28, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255, 164, 0, 1) 0, rgba(251, 110, 28, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 164, 0, 1) 0, rgba(251, 110, 28, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', endColorstr='#fb6e1c', GradientType=0)
+}
+
+#fbalert,
+.comments,
+.fbcoms {
+	background-color: #fff
+}
+
+.countdown {
+	font-size: 20px;
+	color: #000;
+	margin-top: 20px
+}
+
+.countdown span {
+	color: #ff2c21;
+	text-align: left
+}
+
+.commentscontents {
+	background: #e9ebee;
+}
+
+.commentscontents.wrapper {
+	margin: 0
+}
+
+.comments {
+	margin-top: 10px
+}
+
+#fbalert>div {
+	margin-left: 25px
+}
+
+#fbalert {
+	padding: 5px
+}
+
+.fbcoms {
+	font-family: Tahoma, Verdana, sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0;
+	font-size: 13px;
+	text-align: left;
+	box-sizing: border-box
+}
+
+.fbcoms p {
+	margin: 0
+}
+
+.totlikes,
+.viewmore {
+	margin-top: 3px!important;
+	background-color: #e9ebee;
+	background-position: 5px center;
+	background-repeat: no-repeat
+}
+
+.comments {
+	text-align: center;
+	padding: 0 5px 10px
+}
+
+.totlikes {
+	padding: 5px 5px 5px 23px
+}
+
+.fbblue {
+	color: #3c5a96
+}
+
+.buttons {
+	padding-bottom: 5px;
+	font-family: Arial, sans-serif;
+	color: #7d7d7f
+}
+
+.buttons span {
+	cursor: pointer
+}
+
+.viewmore {
+	padding: 5px 5px 5px 23px
+}
+
+.left {
+	color: #3c5a96
+}
+
+.right {
+	color: #7d7d7f;
+	float: right
+}
+
+.item {
+	margin-top: 3px;
+	border-bottom: 1px solid #86878c;
+	padding: 5px 5px 5px 60px;
+	min-height: 60px;
+	box-sizing: border-box
+}
+
+.profileimg {
+	position: absolute;
+	top: 5px;
+	left: 5px
+}
+
+.comtxt {
+	line-height: 16px
+}
+
+.name {
+	color: #3c5a96
+}
+
+.ago {
+	color: #86878c;
+	font-size: .95em
+}
+
+.fblike,
+.likes {
+	color: #3c5a96;
+	font-size: .95em;
+	cursor: pointer
+}
+
+.combot {
+	padding-top: 5px
+}
+
+.clickhere {
+	padding: 30px 10px 5px;
+	line-height: 18px
+}
+
+.fbimg {
+	background-color: #fff;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	max-width: 210px;
+	width: 100%;
+	padding: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
+	margin: 10px 0 5px
+}
+
+#panel1 h2,
+#panel1 p {
+	margin-bottom: 15px
+}
+
+#panel1 h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: left
+}
+
+.dt {
+	text-align: right
+}
+
+.countdown {
+	text-align: center
+}
+
+.iphonelogo {
+	width: 70px;
+	margin-top: 5px
+}

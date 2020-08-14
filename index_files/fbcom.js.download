@@ -1,0 +1,42 @@
+var fbCOM = function(element, time) {
+  setTimeout(function () {
+    fadeIn(element,250);
+  }, time || 1000);
+}
+fbCOM(document.querySelector('#fb1'), 1000);
+fbCOM(document.querySelector('#fb2'), 4000);
+fbCOM(document.querySelector('#fb3'), 9000);
+fbCOM(document.querySelector('#fb4'), 16000);
+fbCOM(document.querySelector('#fb5'), 25000);
+fbCOM(document.querySelector('#fb6'), 53000);
+
+var likes = document.querySelectorAll('.like');
+likes.forEach(function (element) {
+  element.addEventListener('click', function () {
+    if (element.classList.contains('selected')) {
+      element.classList.remove('selected');
+      element.innerHTML = 'Like';
+      document.querySelector('#youand').innerHTML = ""
+
+    } else {
+      element.classList.add('selected');
+      element.innerHTML = 'Unlike';
+      document.querySelector('#youand').innerHTML = "You and "
+    }
+  })
+});
+var fblikes = document.querySelectorAll('.fblike');
+fblikes.forEach(function (element) {
+  element.addEventListener('click', function () {
+    if (element.classList.contains('selected')) {
+      element.classList.remove('selected');
+      element.innerHTML = 'Like';
+
+    } else {
+      element.classList.add('selected');
+      element.innerHTML = 'Unlike';
+    }
+  })
+});
+
+
