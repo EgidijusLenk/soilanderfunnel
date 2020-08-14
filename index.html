@@ -16,7 +16,7 @@ function getURLParameter(e) {
 }
 function fadeIn(e,t){if(e){e.style.opacity=0,e.style.display="block";var n=+new Date,a=function(){e.style.opacity=+e.style.opacity+(new Date-n)/t,n=+new Date,+e.style.opacity<1&&(window.requestAnimationFrame&&requestAnimationFrame(a)||setTimeout(a,16))};a()}}function fadeOut(e){e&&(e.style.opacity=1,function t(){(e.style.opacity-=.1)<0?e.style.display="none":requestAnimationFrame(t)}())}function showGraphics(){document.querySelectorAll(".graphic1, .graphic2").forEach(function(e){e.classList.add("animatedSlow zoomIn")});var e=document.querySelector(".graphic1"),t=document.querySelector(".graphic2");e&&fadeIn(e,500),window.setTimeout(function(){t&&fadeIn(t,500)},800)}
 </script>
-
+<!-- asdsa -->
     <style>
         /* #qubiq-container,
         #qubiq-container.alt {
