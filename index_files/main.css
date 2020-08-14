@@ -12,14 +12,12 @@
 
 html {
     font-family: "Montserrat", sans-serif;
-    font-family: Mrdodo, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 body {
-    margin: 0;
-    background: url(../images/background.jpg);
+    margin: 0
 }
 
 article,
@@ -244,15 +242,6 @@ th {
         width: 1170px
     }
 }
-
-@media (max-width: 1090px) {
-    body,
-    html {
-margin: 0;
-background: url(../images/background_mob.jpg) !important;
-}
-}
-
 
 .row {
     margin-left: -15px;
@@ -1056,19 +1045,19 @@ legend {
 }
 
 .pull-right {
-    float: right !important
+    float: right!important
 }
 
 .pull-left {
-    float: left !important
+    float: left!important
 }
 
 .hide {
-    display: none !important
+    display: none!important
 }
 
 .show {
-    display: block !important
+    display: block!important
 }
 
 .hidden,
@@ -1113,175 +1102,175 @@ legend {
 
 @media (max-width:767px) {
     .visible-xs {
-        display: block !important
+        display: block!important
     }
     table.visible-xs {
-        display: table !important
+        display: table!important
     }
     tr.visible-xs {
-        display: table-row !important
+        display: table-row!important
     }
     td.visible-xs,
     th.visible-xs {
-        display: table-cell !important
+        display: table-cell!important
     }
     .visible-xs-block {
-        display: block !important
+        display: block!important
     }
     .visible-xs-inline {
-        display: inline !important
+        display: inline!important
     }
     .visible-xs-inline-block {
-        display: inline-block !important
+        display: inline-block!important
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm {
-        display: block !important
+        display: block!important
     }
     table.visible-sm {
-        display: table !important
+        display: table!important
     }
     tr.visible-sm {
-        display: table-row !important
+        display: table-row!important
     }
     td.visible-sm,
     th.visible-sm {
-        display: table-cell !important
+        display: table-cell!important
     }
     .visible-sm-block {
-        display: block !important
+        display: block!important
     }
     .visible-sm-inline {
-        display: inline !important
+        display: inline!important
     }
     .visible-sm-inline-block {
-        display: inline-block !important
+        display: inline-block!important
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .visible-md {
-        display: block !important
+        display: block!important
     }
     table.visible-md {
-        display: table !important
+        display: table!important
     }
     tr.visible-md {
-        display: table-row !important
+        display: table-row!important
     }
     td.visible-md,
     th.visible-md {
-        display: table-cell !important
+        display: table-cell!important
     }
     .visible-md-block {
-        display: block !important
+        display: block!important
     }
     .visible-md-inline {
-        display: inline !important
+        display: inline!important
     }
     .visible-md-inline-block {
-        display: inline-block !important
+        display: inline-block!important
     }
 }
 
 @media (min-width:1200px) {
     .visible-lg {
-        display: block !important
+        display: block!important
     }
     table.visible-lg {
-        display: table !important
+        display: table!important
     }
     tr.visible-lg {
-        display: table-row !important
+        display: table-row!important
     }
     td.visible-lg,
     th.visible-lg {
-        display: table-cell !important
+        display: table-cell!important
     }
     .visible-lg-block {
-        display: block !important
+        display: block!important
     }
     .visible-lg-inline {
-        display: inline !important
+        display: inline!important
     }
     .visible-lg-inline-block {
-        display: inline-block !important
+        display: inline-block!important
     }
     .hidden-lg {
-        display: none !important
+        display: none!important
     }
 }
 
 @media (max-width:767px) {
     .hidden-xs {
-        display: none !important
+        display: none!important
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .hidden-sm {
-        display: none !important
+        display: none!important
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .hidden-md {
-        display: none !important
+        display: none!important
     }
 }
 
 .visible-print {
-    display: none !important
+    display: none!important
 }
 
 @media print {
     .visible-print {
-        display: block !important
+        display: block!important
     }
     table.visible-print {
-        display: table !important
+        display: table!important
     }
     tr.visible-print {
-        display: table-row !important
+        display: table-row!important
     }
     td.visible-print,
     th.visible-print {
-        display: table-cell !important
+        display: table-cell!important
     }
 }
 
 .visible-print-block {
-    display: none !important
+    display: none!important
 }
 
 @media print {
     .visible-print-block {
-        display: block !important
+        display: block!important
     }
 }
 
 .visible-print-inline {
-    display: none !important
+    display: none!important
 }
 
 @media print {
     .visible-print-inline {
-        display: inline !important
+        display: inline!important
     }
 }
 
 .visible-print-inline-block {
-    display: none !important
+    display: none!important
 }
 
 @media print {
     .visible-print-inline-block {
-        display: inline-block !important
+        display: inline-block!important
     }
     .hidden-print {
-        display: none !important
+        display: none!important
     }
 }
 
@@ -1296,7 +1285,7 @@ legend {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: inherit;
-    color: #7b7b7b;
+    color: #333;
     border-bottom: 1px solid #e5e5e5
 }
 
@@ -1855,7 +1844,7 @@ a {
 
 input::-webkit-contacts-auto-fill-button {
     visibility: hidden;
-    display: none !important;
+    display: none!important;
     pointer-events: none;
     height: 0;
     width: 0;
@@ -1899,7 +1888,7 @@ input::-webkit-contacts-auto-fill-button {
 
 .btn {
     background-color: #6ecf7b;
-    /* color: #fff; */
+    color: #fff;
     text-shadow: 0 -1px rgba(0, 0, 0, .1);
     box-shadow: 0 1px rgba(255, 255, 255, .05) inset, 0 2px 2px rgba(0, 0, 0, .2);
     border: none
@@ -1932,19 +1921,17 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .legal-top {
-    background: #f32115;
-    font-size: 16px;
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: Mrdodo, sans-serif;
+    background: #848282;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-    padding: 2px 0
+    padding: 7px 0
 }
 
 .legal-footer,
 .legal-pricing {
     font-size: 11px;
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: Mrdodo, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 footer {
@@ -1976,7 +1963,7 @@ footer {
 
 .legal-terms {
     margin: 25px auto;
-    color: #7d7d7d;
+    color: #023d58;
     min-height: 140px;
     background: #e9ebee;
     padding: 20px;
@@ -1988,11 +1975,7 @@ footer {
 .site-console,
 .site-console h3 {
     font-size: 18px;
-    font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 25px;
-    /* font-family: Mrdodo, sans-serif; */
-    border: 2px solid #fbfbfb;
+    font-weight: 400
 }
 
 .legal-footer a {
@@ -2009,7 +1992,7 @@ footer {
         padding: 5px 5px;
     }
     .legal-top {
-        font-size: 14px;
+        font-size: 18px;
         padding: 1px 0;
     }
     .site-header {
@@ -2019,8 +2002,8 @@ footer {
         text-align: center
     }
     .site-console__header {
-        background: ffffffde;
-        /* color: #7d7d7d; */
+        background: transparent;
+        color: #023d58;
         font-size: 16px;
         line-height: 140%;
         /*text-shadow: 2px 2px 2px #553403;*/
@@ -2032,11 +2015,11 @@ footer {
         margin: 0 auto
     }
     .site-console {
-        background: #ffffffb3;
+        background: transparent;
         border-radius: 15px;
         /*margin-top: 40px;*/
-        box-shadow: 1px 1px 12px #0000008f;
-        /* color: #808080 */
+        /*box-shadow: 1px 1px 20px #686a66;*/
+        color: #333
     }
     .site-console h3 {
         text-align: center;
@@ -2053,7 +2036,7 @@ footer {
         padding: 5px 5px;
     }
     .legal-top {
-        font-size: 12px;
+        font-size: 17px;
         padding: 1px 0;
     }
 }
@@ -2061,8 +2044,7 @@ footer {
 .site-console__header--center-large {
     text-align: center;
     font-size: 17px;
-    display: none;
-    /* color: #bbbbbb; */
+    color: #023d58;
 }
 
 .site-console__header--large {
@@ -2086,7 +2068,7 @@ footer {
 
 .site-console__footer {
     padding: 10px 20px;
-    border-top: 1px dashed #7d7d7d
+    border-top: 1px dashed #023d58
 }
 
 @media screen and (max-width:991px) {
@@ -2096,12 +2078,31 @@ footer {
 }
 
 body {
-    background: url(../images/background.jpg);
+    /*background: url(../img/background.jpg);*/
     background-position: 50% 50px;
     background-repeat: no-repeat;
     background-color: black;
 }
 
+
+}
+:root,
+body,
+html {
+    height: 100%
+}
+:root,
+html {
+    box-sizing: border-box
+}
+*,
+ :after,
+ :before {
+    box-sizing: inherit
+}
+.control-label {
+    text-align: left!important
+}
 @media screen and (max-width:991px) {
     .form-control {
         height: 46px;
@@ -2110,7 +2111,40 @@ body {
         font-size: 18px;
         line-height: 1.33333
     }
+    
     .form-horizontal .control-label {
         margin: 0 0 5px 5px
     }
+}
+.paginator-page {
+    display: none
+}
+body[data-page=gameplay] .paginator-page--gameplay,
+body[data-page=end] .paginator-page--end,
+body[data-page=msisdn] .paginator-page--msisdn,
+body[data-page=verification] .paginator-page--verification {
+    display: block
+}
+:root,
+body,
+html {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif*/
+    /*font-family: "Myriad Pro", sans-serif;*/
+}
+
+/*# sourceMappingURL=main.css.map */
+font-size: 14px;
+font-family: Montserrat,
+sans-serif*/
+/*font-family: "Myriad Pro", sans-serif;*/
+
+}
+
+/*# sourceMappingURL=main.css.map */
+font-size: 14px;
+font-family: Montserrat,
+sans-serif*/
+/*font-family: "Myriad Pro", sans-serif;*/
+
 }

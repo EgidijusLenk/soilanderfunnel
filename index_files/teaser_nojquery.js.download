@@ -1,12 +1,12 @@
 var answerMapping = {
   teaser_answer_2: {
-    'Huiseigenaar': {
+    'i am a home owner': {
       sd_homeownership: 'home_owner'
     },
-    'Huurder': {
+    'i am renting my home': {
       sd_homeownership: 'renting'
     },
-    'Anders': {
+    'None of the above': {
       sd_homeownership: 'none'
     }
   }
